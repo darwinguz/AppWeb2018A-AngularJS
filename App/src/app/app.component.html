@@ -1,3 +1,4 @@
+<!--
 <div class="row">
   <div class="col-sm-12">
     <h1>Bindings</h1>
@@ -81,3 +82,18 @@
   </div>
   <div class="col-sm-4"></div>
 </div>
+-->
+
+<h1>Componente seleccion</h1>
+<div *ngIf="mostrarComponente">
+  <app-seleccion [contador]="contadorDesdePapa">
+  </app-seleccion>
+</div>
+
+<button class="btn btn-success" (click)="contadorDesdePapa = contadorDesdePapa + 1">
+  Aumentar valor de contador
+</button>
+
+<button class="btn btn-info" (click)="mostrarComponente = !mostrarComponente">
+  Cambiar mostrar seleccion
+</button>

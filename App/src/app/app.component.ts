@@ -8,6 +8,8 @@ import {Component} from '@angular/core';
   ]
 })
 export class AppComponent {
+  contadorDesdePapa = 0;
+  mostrarComponente = true;
   // Interpolacion
   titulo = 'Web';
   usuario = {
